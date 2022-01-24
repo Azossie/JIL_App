@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:fillViewport="true"
+android:padding="5dp"
+tools:context=".ui.digitalworkshop.filldigitalwiki.EditDevelopmentFragment">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp"
+        android:scaleType="fitXY"
+        tools:context=".ui.digitalworkshop.filldigitalwiki.EditDevelopmentFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY">
+
+            <TableLayout
+                android:id="@+id/developments_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/white">
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</ScrollView>

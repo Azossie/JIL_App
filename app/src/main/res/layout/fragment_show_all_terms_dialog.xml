@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.digitalworkshop.packdigitalbag.ShowAllTermsDialogFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/show_text_all_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="25dp"
+        android:textAlignment="gravity"
+        android:textSize="20sp"
+        android:singleLine="false"
+        app:layout_constraintBottom_toTopOf="@id/mascot_great_done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/mascot_great_done"
+        android:layout_width="135dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/mascot_great"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mascot_great_done"
+        app:layout_constraintTop_toBottomOf="@id/show_text_all_terms"/>
+
+    <ImageView
+        android:id="@+id/bubble_great_done"
+        android:layout_width="135dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginLeft="152dp"
+        android:src="@drawable/bubble_great_done"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/show_text_all_terms"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

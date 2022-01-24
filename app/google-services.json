@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "505148270014",
+    "firebase_url": "https://jil-app-bd399-default-rtdb.firebaseio.com",
+    "project_id": "jil-app-bd399",
+    "storage_bucket": "jil-app-bd399.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505148270014:android:cbc7856258d02ca5bc85ef",
+        "android_client_info": {
+          "package_name": "de.fhaachen.praxis.jil_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505148270014-jl5sjvoukfckmuvgnuhmrs08kqqv60t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnvbN3T-U5WbS1kDQMc2iI9g_apxAPf6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505148270014-jl5sjvoukfckmuvgnuhmrs08kqqv60t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

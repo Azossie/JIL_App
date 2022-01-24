@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:scaleType="fitXY"
+    tools:context=".ui.digitalworkshop.filldigitalwiki.DigitalwikiTermExplanationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:padding="10dp"
+        tools:context=".ui.digitalworkshop.filldigitalwiki.DigitalwikiTermExplanationFragment">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:context=".ui.digitalworkshop.filldigitalwiki.DigitalwikiTermExplanationFragment">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                tools:context=".ui.innovationworkshop.persona.DigitalwikiTermExplanationFragment">
+
+
+                <Button
+                    android:id="@+id/back_to_all_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="150dp"
+                    android:backgroundTint="@color/jil_yellow"
+                    android:textColor="@color/black"
+                    android:text="zurück"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+
+                <TextView
+                    android:id="@+id/term_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="210dp"
+                    android:textSize="20sp"
+                    android:singleLine="false"
+                    android:theme="@style/titleStyle"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/back_to_all_terms"/>
+
+                <TextView
+                    android:id="@+id/term_explanation"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14sp"
+                    android:singleLine="false"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/term_name"/>
+
+                <EditText
+                    android:id="@+id/term_edit"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14sp"
+                    android:singleLine="false"
+                    android:hint="Erklärung eingeben"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/term_name"/>
+
+
+                <Button
+                    android:id="@+id/button_save_explanation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="150dp"
+                    android:text="speichern"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/term_edit"/>
+
+
+                <TextView
+                    android:id="@+id/text_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="150dp"
+                    android:singleLine="false"
+                    android:theme="@style/titleStyle"
+                    android:text="Kategorien"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/button_save_explanation"/>
+
+                <TableLayout
+                    android:id="@+id/all_categories"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_categories">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/button_add_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/jil_green"
+                            android:clickable="true"
+                            android:src="@drawable/plus" />
+
+                        <TextView
+                            android:id="@+id/text_input_new_category"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="16dp"
+                            android:singleLine="false"
+                            android:text="Eine neue Kategorie einfügen"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+</HorizontalScrollView>

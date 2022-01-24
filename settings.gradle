@@ -1,0 +1,2 @@
+rootProject.name = "JIL_App"
+include ':app'

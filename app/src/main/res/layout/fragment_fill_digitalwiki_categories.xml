@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:padding="10dp">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    tools:context=".ui.digitalworkshop.filldigitalwiki.FillDigitalwikiCategoriesFragment">
+
+    <Button
+        android:id="@+id/back_to_digitalwiki_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/jil_yellow"
+        android:textColor="@color/black"
+        android:text="zurück" />
+
+
+    <ImageView
+        android:id="@+id/wiki_categories_mascot_gladly"
+        android:layout_width="135dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/mascot_gladly"/>
+
+
+    <ImageView
+        android:id="@+id/wiki_bubble_your_terms"
+        android:layout_width="135dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="130dp"
+        android:src="@drawable/bubble_your_terms"/>
+
+    <TextView
+        android:id="@+id/text_wiki_categories_your_terms"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="270dp"
+        android:singleLine="false"
+        android:text=""
+        android:theme="@style/titleStyle" />
+
+    <TextView
+        android:id="@+id/text_digital_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="10dp"
+        android:singleLine="false"
+        android:theme="@style/titleStyle"
+        android:text="Kategorien"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/button_digital_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="@color/jil_green"
+        android:textColor="@color/black"
+        android:text="Digitale Daten" />
+
+    <Button
+        android:id="@+id/button_networking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="@color/jil_green"
+        android:textColor="@color/black"
+        android:text="Vernetzung" />
+
+    <Button
+        android:id="@+id/button_automatisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="@color/jil_green"
+        android:textColor="@color/black"
+        android:text="Automatisierung" />
+
+    <Button
+        android:id="@+id/button_digital_client_access"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="590dp"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="@color/jil_green"
+        android:textColor="@color/black"
+        android:text="Digitaler Kundenzugang" />
+
+    <ImageView
+        android:id="@+id/wiki_categories_mascot_show"
+        android:layout_width="135dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="260dp"
+        android:src="@drawable/mascot_show_left"/>
+
+    <ImageView
+        android:id="@+id/wiki_bubble_klick_on"
+        android:layout_width="135dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="200dp"
+        android:src="@drawable/bubble_klick_on_category"/>
+
+
+</FrameLayout>
+
+</ScrollView>

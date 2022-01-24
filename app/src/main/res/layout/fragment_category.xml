@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:scaleType="fitXY"
+    tools:context=".ui.digitalworkshop.filldigitalwiki.CategoryFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:padding="10dp"
+        tools:context=".ui.digitalworkshop.filldigitalwiki.CategoryFragment">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:context=".ui.digitalworkshop.filldigitalwiki.CategoryFragment">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY">
+
+                <Button
+                    android:id="@+id/back_to_term_explanation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/jil_yellow"
+                    android:text="zurück"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/text_category_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="false"
+                    android:theme="@style/titleStyle"
+                    android:text=""
+                    android:textSize="25sp"/>
+
+                <TableLayout
+                    android:id="@+id/category_terms_table"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="150dp"
+                    android:background="@android:color/white">
+
+                    <!--<TableRow>
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/button_add_category_term"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/jil_green"
+                            android:clickable="true"
+                            android:src="@drawable/plus" />
+
+                        <TextView
+                            android:id="@+id/text_input_new_term"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14sp"
+                            android:text="Einen neuen Begriff einfügen"
+                            android:singleLine="false"/>
+                    </TableRow>
+-->
+                    <!-- <TableRow>
+                         <Button
+                             android:id="@+id/button_internet_of_things"
+                             android:layout_width="200dp"
+                             android:layout_height="wrap_content"
+                             android:backgroundTint="@color/jil_yellow_secondary"
+                             android:textColor="@color/black"
+                             android:text="Internet der Dinge" />
+                     </TableRow>
+
+                     <TableRow>
+                         <Button
+                             android:id="@+id/button_big_data"
+                             android:layout_width="200dp"
+                             android:layout_height="wrap_content"
+                             android:backgroundTint="@color/jil_grey"
+                             android:textColor="@color/black"
+                             android:text="Big Data" />
+                     </TableRow>-->
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+</HorizontalScrollView>

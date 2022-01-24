@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.digitalworkshop.packdigitalbag.PackDigitalbagFragment">
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="Packt euren Digitalisierungskoffer Einleitung"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>-->
+
+    <Button
+        android:id="@+id/back_to_digitalworkshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/jil_yellow"
+        android:textColor="@color/black"
+        android:text="zurück" />
+
+    <Button
+        android:id="@+id/goto_methode101_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="250dp"
+        android:backgroundTint="@color/jil_yellow"
+        android:textColor="@color/black"
+        android:text="weiter" />
+
+    <ImageView
+        android:id="@+id/image_pack_digitalbag_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/pack_digitalbag_intro" />
+
+</FrameLayout>

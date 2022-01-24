@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:padding="10dp">
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.innovationworkshop.InnovationworkshopFragment">
+
+
+    <TextView
+        android:id="@+id/text_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/step_introduction"
+        android:theme="@style/titleStyle"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/image_intro"
+        android:layout_width="135dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/mascot_intro" />
+
+    <TextView
+        android:id="@+id/text_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/step_questions"
+        android:theme="@style/titleStyle"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/image_car"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="190dp"
+        android:src="@drawable/car" />
+
+
+    <ImageView
+        android:id="@+id/image_building"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="250dp"
+        android:src="@drawable/building" />
+
+    <ImageView
+        android:id="@+id/image_mascot_asking1"
+        android:layout_width="130dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="280dp"
+        android:src="@drawable/mascot_ask" />
+
+    <TextView
+        android:id="@+id/text_persona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="250dp"
+        android:text="@string/step_persona"
+        android:theme="@style/titleStyle"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/image_mascot_asking2"
+        android:layout_width="110dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/mascot_ask" />
+
+    <ImageView
+        android:id="@+id/image_persona"
+        android:layout_width="49dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="270dp"
+        android:src="@drawable/persona" />
+
+    <TextView
+        android:id="@+id/text_indecomic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="390dp"
+        android:text="@string/step_indecomic"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:theme="@style/titleStyle" />
+
+    <ImageView
+        android:id="@+id/image_indecomic"
+        android:layout_width="130dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="180dp"
+        android:src="@drawable/comic" />
+
+
+    <ImageView
+        android:id="@+id/image_click_on"
+        android:layout_width="250dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/mascot_instruction" />
+
+
+</FrameLayout>
+
+</ScrollView>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scaleType="fitXY"
+    android:padding="5dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        tools:context=".ui.innovationworkshop.persona.CreatePersonaFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:context=".ui.innovationworkshop.persona.CreatePersonaFragment">
+
+            <Button
+                android:id="@+id/back_to_persona_instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="0dp"
+                android:backgroundTint="@color/jil_yellow"
+                android:textColor="@color/black"
+                android:text="zurück"
+                app:layout_constraintEnd_toStartOf="@id/goto_edit_persona"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/goto_edit_persona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="110dp"
+                android:backgroundTint="@color/jil_yellow"
+                android:textColor="@color/black"
+                android:text="weiter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/back_to_persona_instructions"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/text_persona_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Persona"
+                android:textSize="30sp"
+                android:theme="@style/titleStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/back_to_persona_instructions" />
+
+            <ImageView
+                android:id="@+id/image_mascot_gladly"
+                android:layout_width="135dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/mascot_gladly"
+                app:layout_constraintEnd_toStartOf="@id/image_click_on_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/back_to_persona_instructions"/>
+
+            <ImageView
+                android:id="@+id/image_click_on_icon"
+                android:layout_width="165dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/click_on_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image_mascot_gladly"
+                app:layout_constraintTop_toBottomOf="@id/text_persona_title" />
+
+
+
+            <TableLayout
+                android:id="@+id/table_icons"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="100dp"
+                android:stretchColumns="*"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_mascot_gladly">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/image_woman"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/woman"/>
+
+                    <ImageView
+                        android:id="@+id/image_man"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/man"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</ScrollView>

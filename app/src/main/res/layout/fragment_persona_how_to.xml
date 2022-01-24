@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scaleType="fitXY"
+    android:padding="5dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        tools:context=".ui.innovationworkshop.persona.PersonaHowToFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:context=".ui.innovationworkshop.persona.PersonaHowToFragment">
+
+            <Button
+                android:id="@+id/back_to_persona_definition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="0dp"
+                android:backgroundTint="@color/jil_yellow"
+                android:textColor="@color/black"
+                android:text="zurück"
+                app:layout_constraintEnd_toStartOf="@id/goto_persona_questions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/goto_persona_questions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="110dp"
+                android:backgroundTint="@color/jil_yellow"
+                android:textColor="@color/black"
+                android:text="weiter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/back_to_persona_definition"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/image_mascot_gladly"
+                android:layout_width="135dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/mascot_gladly"
+                app:layout_constraintEnd_toStartOf="@id/text_persona_intro"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/back_to_persona_definition"/>
+
+            <TextView
+                android:id="@+id/text_persona_intro"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:text="1. Schaut euch die Einstiegsszenarien und Fragestellungen noch einmal an. Überlegt, welche Menschen in diesem Szenario im Indeland 2050+ leben. Wenn ihr schon eine konkrete Idee habt, könnt ihr natürlich auch diese verfolgen"
+                android:singleLine="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image_mascot_gladly"
+                app:layout_constraintTop_toBottomOf="@id/back_to_persona_definition"/>
+
+            <!--<ImageView
+                android:id="@+id/image_bubble_what_is_persona"
+                android:layout_width="135dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/what_is_persona"
+                app:layout_constraintEnd_toStartOf="@id/image_mascot_asking"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_mascot_gladly" />
+
+            <ImageView
+                android:id="@+id/image_mascot_asking"
+                android:layout_width="135dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="140dp"
+                android:src="@drawable/mascot_ask"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image_bubble_what_is_persona"
+                app:layout_constraintTop_toBottomOf="@id/image_mascot_gladly"/>
+
+            <TextView
+                android:id="@+id/answer_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="0dp"
+
+                android:text="Antwort:"
+                android:theme="@style/titleStyle"
+                app:layout_constraintEnd_toStartOf="@id/text_answer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_bubble_what_is_persona" />
+
+            <TextView
+                android:id="@+id/text_answer"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="0dp"
+                android:text="Eine Persona ist ein Steckbrief einer ausgedachten Person, bzw. eher einer bestimmten Personengruppe. In eurem Fall eines Bewohners des Indelands 2050+. Die Persona gibt euch ein besseres Verständnis und ein genaues Bild der Menschen, die im Indeland 2050+ leben."
+                android:singleLine="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/answer_title"
+                app:layout_constraintTop_toBottomOf="@id/image_bubble_what_is_persona" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</ScrollView>

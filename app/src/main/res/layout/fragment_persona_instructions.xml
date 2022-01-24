@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scaleType="fitXY"
+    android:padding="5dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        tools:context=".ui.innovationworkshop.persona.PersonaQuestionsFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:context=".ui.innovationworkshop.persona.PersonaHQuestionsFragment">
+
+            <Button
+                android:id="@+id/back_to_persona_questions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="0dp"
+                android:backgroundTint="@color/jil_yellow"
+                android:textColor="@color/black"
+                android:text="zurück"
+                app:layout_constraintEnd_toStartOf="@id/goto_create_persona"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/goto_create_persona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="110dp"
+                android:backgroundTint="@color/jil_yellow"
+                android:textColor="@color/black"
+                android:text="weiter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/back_to_persona_questions"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/image_mascot_gladly"
+                android:layout_width="135dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/mascot_gladly"
+                app:layout_constraintEnd_toStartOf="@id/text_persona_instructions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/back_to_persona_questions"/>
+
+            <TextView
+                android:id="@+id/text_persona_instructions"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:text="3. Nutzt die Baukastenelemente in der Mappe.
+
+                                                    - Klicke einfach auf die auf eine Figur, um sie in die Persona einzufügen.
+                                    - Klicke auf Feld um, es auszufüllen."
+                android:singleLine="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image_mascot_gladly"
+                app:layout_constraintTop_toBottomOf="@id/back_to_persona_questions"/>
+
+            <ImageView
+                android:id="@+id/image_tipp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/tipp"
+                app:layout_constraintEnd_toStartOf="@id/text_tipp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_mascot_gladly" />
+
+            <TextView
+                android:id="@+id/text_tipp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Ihr müsst nicht zwingend alle Felder ausfüllen.
+Hat eure Persona z. B. nur zwei Hobbys,
+könnt ihr die übrigen Felder leer lassen."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image_tipp"
+                app:layout_constraintTop_toBottomOf="@id/image_mascot_gladly" />
+
+            <ImageView
+                android:id="@+id/image_mascot_click_right"
+                android:layout_width="135dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="100dp"
+                app:srcCompat="@drawable/mascot_click_right"
+                app:layout_constraintEnd_toStartOf="@id/image_click_on_weiter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_tipp" />
+
+            <ImageView
+                android:id="@+id/image_click_on_weiter"
+                android:layout_width="155dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="50dp"
+                app:srcCompat="@drawable/click_on_weiter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image_mascot_click_right"
+                app:layout_constraintTop_toBottomOf="@id/text_tipp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</ScrollView>

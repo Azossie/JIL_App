@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.digitalworkshop.packdigitalbag.ShowTermDialogFragment">
+
+    <TextView
+        android:id="@+id/show_text_term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="25dp"
+        android:textAlignment="gravity"
+        android:textSize="20sp"
+        android:singleLine="false"/>
+
+</FrameLayout>

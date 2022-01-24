@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scaleType="fitXY"
+    tools:context=".ui.digitalworkshop.filldigitalwiki.DigitalwikiExplanationInputFragment">
+
+    <Button
+        android:id="@+id/back_to_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/jil_yellow"
+        android:textColor="@color/black"
+        android:text="zurück" />
+
+       <TextView
+        android:id="@+id/term_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:theme="@style/titleStyle"
+        android:text="" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_digitalwiki_explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:tabMode="scrollable">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erklärung"
+            android:icon="@drawable/explanation"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bearbeiten"
+            android:icon="@drawable/edit"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verlauf"
+            android:icon="@drawable/development"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="241dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    </FrameLayout>
+
+   <!-- <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="241dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        tools:context=".MainActivity">
+
+        <FrameLayout
+            android:id="@+id/tab_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+    </HorizontalScrollView>-->
+
+</FrameLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scaleType="fitXY"
+    android:padding="5dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        tools:context=".ui.innovationworkshop.persona.PersonaQuestionsFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:context=".ui.innovationworkshop.persona.PersonaHQuestionsFragment">
+
+            <Button
+                android:id="@+id/back_to_persona_how_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="0dp"
+                android:backgroundTint="@color/jil_yellow"
+                android:textColor="@color/black"
+                android:text="zurück"
+                app:layout_constraintEnd_toStartOf="@id/goto_persona_instructions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/goto_persona_instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="110dp"
+                android:backgroundTint="@color/jil_yellow"
+                android:textColor="@color/black"
+                android:text="weiter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/back_to_persona_how_to"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/image_mascot_gladly"
+                android:layout_width="135dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/mascot_gladly"
+                app:layout_constraintEnd_toStartOf="@id/text_persona_questions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/back_to_persona_how_to"/>
+
+            <TextView
+                android:id="@+id/text_persona_questions"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:text="2. Erstellt eine Persona, die diese Menschen im
+Indeland 2050+ repräsentiert.
+Stellt euch dabei folgende Fragen:"
+                android:singleLine="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image_mascot_gladly"
+                app:layout_constraintTop_toBottomOf="@id/back_to_persona_how_to"/>
+
+            <TextView
+                android:id="@+id/text_questions"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="20dp"
+                android:text="* Wie sieht die Persona aus?\n* Was ist eine typische Aussage?
+                                \n* Gibt es Dinge, vor denen sie vielleicht Angst hat?
+                                \n* Hat sie einen Beruf oder Hobbys?
+                                \n* Was für ein Typ ist sie? Wie verhält sie sich?
+                                \n* Welche Aufgaben und Ziele hat sie?
+                                \n* Was erwartet sie vom Indeland 2050+?"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_persona_questions" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</ScrollView>

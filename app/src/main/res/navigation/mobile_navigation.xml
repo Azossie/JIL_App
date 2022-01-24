@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_jil">
+
+    <fragment
+        android:id="@+id/nav_jil"
+        android:name="de.fhaachen.praxis.jil_app.ui.jil.JilFragment"
+        android:label="@string/menu_jil"
+        tools:layout="@layout/fragment_jil" />
+
+    <fragment
+        android:id="@+id/nav_getting_started"
+        android:name="de.fhaachen.praxis.jil_app.ui.gettingstarted.GettingStartedFragment"
+        android:label="@string/menu_getting_started"
+        tools:layout="@layout/fragment_getting_started" />
+
+    <fragment
+        android:id="@+id/nav_digitalbag"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalbag.DigitalBagFragment"
+        android:label="@string/menu_digitalbag"
+        tools:layout="@layout/fragment_digital_bag" />
+
+    <fragment
+        android:id="@+id/nav_inde_message"
+        android:name="de.fhaachen.praxis.jil_app.ui.indemessage.IndeMessageFragment"
+        android:label="@string/menu_inde_message"
+        tools:layout="@layout/fragment_inde_message" />
+
+    <fragment
+        android:id="@+id/nav_ring_lectures"
+        android:name="de.fhaachen.praxis.jil_app.ui.ringlectures.RingLecturesFragment"
+        android:label="@string/menu_ring_lectures"
+        tools:layout="@layout/fragment_ring_lectures" />
+
+    <fragment
+        android:id="@+id/nav_tutorials"
+        android:name="de.fhaachen.praxis.jil_app.ui.tutorials.TutorialsFragment"
+        android:label="@string/menu_tutorials"
+        tools:layout="@layout/fragment_tutorials" />
+
+    <fragment
+        android:id="@+id/nav_digital_workshop"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.packdigitalbag.DigitalworkshopFragment"
+        android:label="@string/menu_digital_workshop"
+        tools:layout="@layout/fragment_digitalworkshop" >
+        <action
+            android:id="@+id/action_nav_digital_workshop_to_digitalworkshop_digitalbag"
+            app:destination="@id/digitalworkshop_digitalbag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_innovation_workshop"
+        android:name="de.fhaachen.praxis.jil_app.ui.innovationworkshop.InnovationworkshopFragment"
+        android:label="@string/menu_innovation_workshop"
+        tools:layout="@layout/fragment_innovationworkshop" />
+
+    <fragment
+        android:id="@+id/nav_chatroom"
+        android:name="de.fhaachen.praxis.jil_app.ui.chatroom.ChatroomFragment"
+        android:label="@string/menu_chatroom"
+        tools:layout="@layout/fragment_chatroom" />
+
+    <fragment
+        android:id="@+id/nav_assignment_delivery"
+        android:name="de.fhaachen.praxis.jil_app.ui.assignmentdelivery.AssignmentDeliveryFragment"
+        android:label="@string/menu_assignment_delivery"
+        tools:layout="@layout/fragment_assignment_delivery" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="de.fhaachen.praxis.jil_app.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+
+    <!-- Digitalworkshop-->
+   <fragment
+        android:id="@+id/digitalworkshop_digitalbag"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.packdigitalbag.PackDigitalbagFragment"
+        android:label="Packt euren Digitalisierungskoffer"
+        tools:layout="@layout/fragment_pack_digitalbag" />
+
+    <fragment
+        android:id="@+id/digitalworkshop_digitalbag_method101_intro"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.packdigitalbag.Method101IntroFragment"
+        android:label="Packt euren Digitalisierungskoffer"
+        tools:layout="@layout/fragment_method101_intro" />
+
+    <fragment
+        android:id="@+id/digitalworkshop_digitalbag_method101_start_process"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.packdigitalbag.Method101StartProcessFragment"
+        android:label="Packt euren Digitalisierungskoffer"
+        tools:layout="@layout/fragment_method101_start_process" />
+
+    <fragment
+        android:id="@+id/digitalworkshop_digitalbag_method101_terms_table"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.packdigitalbag.Method101TermsTableFragment"
+        android:label="Packt euren Digitalisierungskoffer"
+        tools:layout="@layout/fragment_method101_terms_table" />
+
+
+    <!-- Fill Digitalwiki-->
+    <fragment
+        android:id="@+id/digitalwiki_definition"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.filldigitalwiki.WikiDefinitionFragment"
+        android:label="Füllt das Digitalisierungswiki"
+        tools:layout="@layout/fragment_wiki_definition" />
+
+    <fragment
+        android:id="@+id/digitalwiki_intro"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.filldigitalwiki.FillDigitalwikiIntroFragment"
+        android:label="Füllt das Digitalisierungswiki"
+        tools:layout="@layout/fragment_fill_digitalwiki_intro" />
+
+    <fragment
+        android:id="@+id/digitalwiki_categories"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.filldigitalwiki.FillDigitalwikiCategoriesFragment"
+        android:label="Füllt das Digitalisierungswiki"
+        tools:layout="@layout/fragment_fill_digitalwiki_categories" />
+
+    <fragment
+        android:id="@+id/digitalwiki_category_digital_data"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.filldigitalwiki.DigitalDataTermsEntryFragment"
+        android:label="Füllt das Digitalisierungswiki"
+        tools:layout="@layout/fragment_digital_data_terms_entry" />
+
+    <fragment
+        android:id="@+id/digitalwiki_category_networking"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.filldigitalwiki.NetworkingTermsEntryFragment"
+        android:label="Füllt das Digitalisierungswiki"
+        tools:layout="@layout/fragment_networking_terms_entry" />
+
+    <fragment
+        android:id="@+id/digitalwiki_category_digital_client_access"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.filldigitalwiki.DigitalClientAccessTermsEntryFragment"
+        android:label="Füllt das Digitalisierungswiki"
+        tools:layout="@layout/fragment_digital_client_access_terms_entry" />
+
+    <fragment
+        android:id="@+id/digitalwiki_category_automatisation"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.filldigitalwiki.AutomatisationTermsEntryFragment"
+        android:label="Füllt das Digitalisierungswiki"
+        tools:layout="@layout/fragment_automatisation_terms_entry" />
+
+    <fragment
+        android:id="@+id/digitalwiki_explanation_input"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.filldigitalwiki.DigitalwikiExplanationInputFragment"
+        android:label="Füllt das Digitalisierungswiki"
+        tools:layout="@layout/fragment_digitalwiki_explanation_input" />
+
+    <fragment
+        android:id="@+id/digitalwiki_category_term_input"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.filldigitalwiki.CategorieTermInputDialogFragment"
+        android:label="Füllt das Digitalisierungswiki"
+        tools:layout="@layout/fragment_categorie_term_input_dialog" />
+
+    <fragment
+        android:id="@+id/digitalwiki_all_terms"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.filldigitalwiki.DigitalwikiAllTermsFragment"
+        android:label="Füllt das Digitalisierungswiki"
+        tools:layout="@layout/fragment_digitalwiki_all_terms" />
+
+    <fragment
+        android:id="@+id/digitalwiki_term_explanation"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.filldigitalwiki.DigitalwikiTermExplanationFragment"
+        android:label="Füllt das Digitalisierungswiki"
+        tools:layout="@layout/fragment_digitalwiki_term_explanation" />
+
+    <fragment
+        android:id="@+id/digitalwiki_show_category"
+        android:name="de.fhaachen.praxis.jil_app.ui.digitalworkshop.filldigitalwiki.CategoryFragment"
+        android:label="Füllt das Digitalisierungswiki"
+        tools:layout="@layout/fragment_category" />
+
+
+    <!-- Persona -->
+    <fragment
+        android:id="@+id/persona_definition"
+        android:name="de.fhaachen.praxis.jil_app.ui.innovationworkshop.persona.PersonaDefinitionFragment"
+        android:label="Persona"
+        tools:layout="@layout/fragment_persona_definition" />
+
+    <fragment
+        android:id="@+id/persona_how_to"
+        android:name="de.fhaachen.praxis.jil_app.ui.innovationworkshop.persona.PersonaHowToFragment"
+        android:label="Persona"
+        tools:layout="@layout/fragment_persona_how_to" />
+
+    <fragment
+        android:id="@+id/persona_questions"
+        android:name="de.fhaachen.praxis.jil_app.ui.innovationworkshop.persona.PersonaQuestionsFragment"
+        android:label="Persona"
+        tools:layout="@layout/fragment_persona_questions" />
+
+    <fragment
+        android:id="@+id/persona_instructions"
+        android:name="de.fhaachen.praxis.jil_app.ui.innovationworkshop.persona.PersonaInstructionsFragment"
+        android:label="Persona"
+        tools:layout="@layout/fragment_persona_instructions" />
+
+    <fragment
+        android:id="@+id/persona_create"
+        android:name="de.fhaachen.praxis.jil_app.ui.innovationworkshop.persona.CreatePersonaFragment"
+        android:label="Persona"
+        tools:layout="@layout/fragment_create_persona" />
+
+    <fragment
+        android:id="@+id/persona_edit"
+        android:name="de.fhaachen.praxis.jil_app.ui.innovationworkshop.persona.EditPersonaFragment"
+        android:label="Persona"
+        tools:layout="@layout/fragment_edit_persona" />
+
+
+</navigation>

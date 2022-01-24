@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_jil"
+            android:icon="@drawable/maskotte"
+            android:title="@string/menu_jil" />
+        <item
+            android:id="@+id/nav_getting_started"
+            android:icon="@drawable/getting_started"
+            android:title="@string/menu_getting_started" />
+        <item
+            android:id="@+id/nav_digitalbag"
+            android:icon="@drawable/digitalbag"
+            android:title="@string/menu_digitalbag" />
+        <item
+            android:id="@+id/nav_inde_message"
+            android:icon="@drawable/inde_message"
+            android:title="@string/menu_inde_message" />
+        <item
+            android:id="@+id/nav_ring_lectures"
+            android:icon="@drawable/ring_lectures"
+            android:title="@string/menu_ring_lectures" />
+        <item
+            android:id="@+id/nav_tutorials"
+            android:icon="@drawable/tutorials"
+            android:title="@string/menu_tutorials" />
+        <item
+            android:id="@+id/nav_digital_workshop"
+            android:icon="@drawable/digital_workshop"
+            android:title="@string/menu_digital_workshop" />
+        <item
+            android:id="@+id/nav_innovation_workshop"
+            android:icon="@drawable/innovation_workshop"
+            android:title="@string/menu_innovation_workshop" />
+        <item
+            android:id="@+id/nav_chatroom"
+            android:icon="@drawable/chatroom"
+            android:title="@string/menu_chatroom" />
+        <item
+            android:id="@+id/nav_assignment_delivery"
+            android:icon="@drawable/assignment_delivery"
+            android:title="@string/menu_assignment_delivery" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>

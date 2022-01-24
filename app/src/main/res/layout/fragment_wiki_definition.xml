@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:padding="10dp">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    tools:context=".ui.digitalworkshop.filldigitalwiki.WikiDefinitionFragment">
+
+
+        <Button
+            android:id="@+id/back_to_digitalworkshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="@color/jil_yellow"
+            android:textColor="@color/black"
+            android:text="zurück" />
+
+        <Button
+            android:id="@+id/goto_fill_digitalwiki_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="250dp"
+            android:backgroundTint="@color/jil_yellow"
+            android:textColor="@color/black"
+            android:text="weiter" />
+
+    <ImageView
+        android:id="@+id/wiki_mascot_gladly"
+        android:layout_width="135dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/mascot_gladly"/>
+
+    <TextView
+        android:id="@+id/wiki_time_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="130dp"
+        android:singleLine="false"
+        android:text="Wieviel Zeit ihr für diese Aufgabe habt, wird euch euer/e Lehrer/in sagen. Viel Spaß!"
+        />
+
+    <ImageView
+        android:id="@+id/wiki_mascot_ask"
+        android:layout_width="135dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/mascot_ask"/>
+
+    <ImageView
+        android:id="@+id/bubble_what_is_wiki"
+        android:layout_width="135dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="130dp"
+        android:src="@drawable/bubble_what_is_wiki"/>
+
+    <TextView
+        android:id="@+id/text_antwort_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="10dp"
+        android:text="Anwort:"
+        android:theme="@style/titleStyle"/>
+
+    <TextView
+        android:id="@+id/text_antwort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="10dp"
+        android:singleLine="false"
+        android:text="Eines der bekanntestens Wiki ist beispielsweise Wikipedia.Wiki´s sind einfache Content Management Systeme (dt. Inhalts-Management-Systeme, kurz: CMS). Das bedeutet, dass hier viele Menschen drauf zugreifen können und die Inhalte einfach bearbeiten können. Ein Wiki birgt deshalb immer das Risiko, dass dort auch manchmal falsche Inhalte verbreitet werden. Um diese Problematik zu verstehen, macht es Sinn, selbst mal ein Wiki zu erstellen."
+        />
+
+
+</FrameLayout>
+
+</ScrollView>

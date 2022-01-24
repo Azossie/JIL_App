@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Jugend Inde Lab</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Max Mustermann</string>
+    <string name="nav_header_subtitle">max@mustermann</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_digitalbag">Digitalisierungskoffer</string>
+    <string name="menu_inde_message">Inde Message</string>
+    <string name="menu_ring_lectures">Ringvorlesungen</string>
+    <string name="menu_jil">Jugend Inde Lab</string>
+    <string name="menu_logout">Abmelden</string>
+    <string name="menu_assignment_delivery">Abgabe von Ergebnissen</string>
+    <string name="menu_chatroom">Chatraum</string>
+    <string name="menu_digital_workshop">Digitalisierungsworkshop</string>
+    <string name="menu_innovation_workshop">Innovationsworkshop</string>
+    <string name="menu_getting_started">Erste Schritte</string>
+    <string name="menu_tutorials">Tutorials</string>
+    <string name="step_introduction">1. Einleitung</string>
+    <string name="step_digitalbag">2. Packt euren Digitalisierungskoffer</string>
+    <string name="step_ring_lectures">3. Schaut euch die Ringvorlesungen noch einmal an</string>
+    <string name="step_digitalwiki">4. Füllt das Digitalisierungswiki</string>
+    <string name="step_reenacht_ideas">5. Spielt eure Projektidee nach</string>
+    <string name="step_grumble">6. Nörgelt mal drauf los</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_digitalworkshop">DigitalworkshopActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="step_questions">2. Einstiegsszenarien und Fragestellungen</string>
+    <string name="step_persona">3. Persona</string>
+    <string name="step_indecomic">4. Indecomic</string>
+    <string name="method101_definition">Die Methode 101  ist eine Brainstormingmethode  mit deren Hilfe in möglichst kurzer Zeit insgesamt 101 Ideen  zu einem bestimmten Thema  gesammelt werden.  Dabei spielt es zunächst keine Rolle,  ob einige Begriffe doppelt  auftauchen oder unpassend sind</string>
+
+    <string name="begriff_eingeben"><font fgcolor='#39a1a7'>Begriff eingeben</font></string>
+    <string name="abbrechen"><font fgcolor='#39a1a7'>Abbrechen</font></string>
+    <string name="ok"><font fgcolor='#39a1a7'>OK</font></string>
+    <string name="title_activity_login">JIL</string>
+    <string name="title_verify_otp">Anmelden - Code überprüfen</string>
+
+
+    <string-array name="schools">
+        <item>Bischöfliche Liebfrauenschule</item>
+        <item>Europaschule Langerwehe</item>
+        <item>Gymnasium Haus Overbach</item>
+        <item>Inda-Gymnasium</item>
+        <item>Kaiser-Karls-Gymnasium</item>
+        <item>Waldschule Eschweiler</item>
+    </string-array>
+
+
+</resources>

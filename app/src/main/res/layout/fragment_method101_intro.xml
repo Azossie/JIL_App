@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:padding="10dp">
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.digitalworkshop.packdigitalbag.Method101IntroFragment">
+
+    <Button
+        android:id="@+id/back_to_pack_digitalbag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/jil_yellow"
+        android:textColor="@color/black"
+        android:text="zurück" />
+
+    <Button
+        android:id="@+id/goto_methode101_process_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="250dp"
+        android:backgroundTint="@color/jil_yellow"
+        android:textColor="@color/black"
+        android:text="weiter" />
+
+    <ImageView
+        android:id="@+id/image_what_is_method101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="140dp"
+        android:src="@drawable/what_is_method101" />
+
+    <ImageView
+        android:id="@+id/image_click_right"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/mascot_click_right" />
+
+    <TextView
+        android:id="@+id/text_antwort_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="60dp"
+        android:text="Antwort:"
+        android:theme="@style/titleStyle"/>
+
+    <TextView
+        android:id="@+id/text_antwort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="130dp"
+        android:text="@string/method101_definition" />
+
+</FrameLayout>
+
+</ScrollView>
