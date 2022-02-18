@@ -1,4 +1,4 @@
-# JIL_App
+# App
 
 ## Purpose
 
